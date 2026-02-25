@@ -1,0 +1,10 @@
+.vs/
+bin/
+obj/
+*.user
+*.exe
+*.dll
+*.pdb
+*.log
+*.mdf
+*.ldf

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A029B12A-2BE4-4C0A-943A-A5F45674B038}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ArtGalleryApp1</RootNamespace>
+    <AssemblyName>ArtGalleryApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ArtGalleryApp1.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArtistsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArtistsControl.Designer.cs">
+      <DependentUpon>ArtistsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArtworksControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArtworksControl.Designer.cs">
+      <DependentUpon>ArtworksControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CategoriesControl.Designer.cs">
+      <DependentUpon>CategoriesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="EditArtworksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditArtworksForm.Designer.cs">
+      <DependentUpon>EditArtworksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstLoginForm.Designer.cs">
+      <DependentUpon>FirstLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModernArtControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModernArtControl.Designer.cs">
+      <DependentUpon>ModernArtControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldMastersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OldMastersControl.Designer.cs">
+      <DependentUpon>OldMastersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AboutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutControl.Designer.cs">
+      <DependentUpon>AboutControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddArtworkControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddArtworkControl.Designer.cs">
+      <DependentUpon>AddArtworkControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeControl.Designer.cs">
+      <DependentUpon>HomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurkishArtControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TurkishArtControl.Designer.cs">
+      <DependentUpon>TurkishArtControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserArtworksControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserArtworksControl.Designer.cs">
+      <DependentUpon>UserArtworksControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutControl.resx">
+      <DependentUpon>AboutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddArtworkControl.resx">
+      <DependentUpon>AddArtworkControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtistsControl.resx">
+      <DependentUpon>ArtistsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtworksControl.resx">
+      <DependentUpon>ArtworksControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoriesControl.resx">
+      <DependentUpon>CategoriesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditArtworksForm.resx">
+      <DependentUpon>EditArtworksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstLoginForm.resx">
+      <DependentUpon>FirstLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeControl.resx">
+      <DependentUpon>HomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModernArtControl.resx">
+      <DependentUpon>ModernArtControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldMastersControl.resx">
+      <DependentUpon>OldMastersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurkishArtControl.resx">
+      <DependentUpon>TurkishArtControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserArtworksControl.resx">
+      <DependentUpon>UserArtworksControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Fonts\BauPro-Medium.ttf" />
+    <None Include="Fonts\Inter-VariableFont_opsz,wght.ttf" />
+    <None Include="Fonts\Montaga-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Fonts\Syne-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Fonts\Syne-Medium.ttf" />
+    <None Include="Fonts\Syne-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Fonts\Trooverc.otf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\About\arkp.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\cafe1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\gothic1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\guernica1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\kiss1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\lasmeninas1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\lastsuper1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\liberty1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\librty1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\mona1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\nightwatch1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\pearl1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\persistence1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\scream1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\stary1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artists\venus1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artworks\cafe.jpg" />
+    <Content Include="Images\Artworks\gothic.jpg" />
+    <Content Include="Images\Artworks\guernica.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artworks\kiss.jpg" />
+    <Content Include="Images\Artworks\lasmeninas.jpg" />
+    <Content Include="Images\Artworks\lastsuper.jpg" />
+    <Content Include="Images\Artworks\liberty.jpg" />
+    <Content Include="Images\Artworks\mona.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artworks\nightwatch.jpg" />
+    <Content Include="Images\Artworks\pearl.jpg" />
+    <Content Include="Images\Artworks\persistence.jpg" />
+    <Content Include="Images\Artworks\scream.jpg" />
+    <Content Include="Images\Artworks\stary.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Artworks\venus.jpg" />
+    <Content Include="Images\Artworks\whistler.jpg" />
+    <Content Include="Images\Categories\modernart.jpg" />
+    <Content Include="Images\Categories\oldmasters.jpg" />
+    <Content Include="Images\Categories\turkishart.jpg" />
+    <Content Include="Images\home.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\user1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\a21.jpg" />
+    <None Include="Resources\ar.jpeg" />
+    <None Include="Resources\sex.png" />
+    <None Include="Resources\age.png" />
+    <None Include="Resources\icons8-user-100.png" />
+    <None Include="Resources\orangelog.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\art-gallery-high-resolution-logo.png" />
+    <None Include="Resources\art-gallery-high-resolution-logo-grayscale-transparent.png" />
+    <None Include="Resources\art-gallery-high-resolution-logo-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
