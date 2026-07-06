@@ -4,6 +4,15 @@ A desktop-based **Art Gallery Management Application** developed using **C# WinF
 
 This project focuses on **UI/UX design decisions**, **user interaction**, and **relational database structure**, and demonstrates a complete end-to-end desktop application workflow.
 
+> [!IMPORTANT]
+> **Source Code & Commercial Use**
+>
+> The source code is not publicly available.
+>
+> If you are an employer interested in reviewing the implementation, or a client interested in purchasing or licensing this project, please feel free to contact me.
+>
+> 📧 **Email:** bedirhan.elcik@stu.fbu.edu.tr
+> 🔗 **LinkedIn:** https://www.linkedin.com/in/bedirhanelcik/
 
 ## ✨ Key Capabilities
 
